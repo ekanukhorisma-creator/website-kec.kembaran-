@@ -1,0 +1,1 @@
+var json_RumahEkarisma_27 = {"type":"FeatureCollection","name":"RumahEkarisma_27","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Alamat":"Rumah Eka, Bantarwuni rt 06 rw 02"},"geometry":{"type":"Point","coordinates":[109.270139591567684,-7.395865999059364]}}]}

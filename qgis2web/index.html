@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/ol-search-layer.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 994px;
+            height: 491px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="resources/horsey.min.js"></script>
+        <script src="resources/ol-search-layer.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/Sawah_2.js"></script><script src="layers/Lapang_3.js"></script><script src="layers/BatasWilayahDesaBantarwuni_4.js"></script><script src="layers/batasdesa_5.js"></script><script src="layers/RT013RW05_6.js"></script><script src="layers/RT0104RW04_7.js"></script><script src="layers/RT0105RW03_8.js"></script><script src="layers/RT0107Rw02_9.js"></script><script src="layers/RT0107RW01_10.js"></script><script src="layers/BatasWilayahRw05_11.js"></script><script src="layers/BatasWilayahRw04_12.js"></script><script src="layers/BatasWilayahRw03_13.js"></script><script src="layers/BatasWilayahRw02_14.js"></script><script src="layers/BatasWilayahRw01_15.js"></script><script src="layers/RumahRT06_16.js"></script><script src="layers/Rumahrt6_17.js"></script><script src="layers/RumahRW02_18.js"></script><script src="layers/LapanganDesaBantarwuni_19.js"></script><script src="layers/RumahWarga_20.js"></script><script src="layers/TPU_21.js"></script><script src="layers/FasilitasLain_22.js"></script><script src="layers/UMKM_23.js"></script><script src="layers/TmptIbadah_24.js"></script><script src="layers/FslitasPendidikan_25.js"></script><script src="layers/FasilitasKesehatan_26.js"></script><script src="layers/RumahEkarisma_27.js"></script><script src="layers/KantorBalaiDesa_28.js"></script><script src="layers/RumahKepalaDesa_29.js"></script><script src="layers/AliranSungai_30.js"></script><script src="layers/JalanKecil_31.js"></script><script src="layers/JalanPerum_32.js"></script><script src="layers/JlDesa_33.js"></script><script src="layers/JlUtamaashp_34.js"></script><script src="layers/desa_bantarwuni_poly_35.js"></script><script src="layers/Bantarwuni_36.js"></script><script src="layers/BatasKecamatanKembaran_37.js"></script>
+        <script src="styles/Sawah_2_style.js"></script><script src="styles/Lapang_3_style.js"></script><script src="styles/BatasWilayahDesaBantarwuni_4_style.js"></script><script src="styles/batasdesa_5_style.js"></script><script src="styles/RT013RW05_6_style.js"></script><script src="styles/RT0104RW04_7_style.js"></script><script src="styles/RT0105RW03_8_style.js"></script><script src="styles/RT0107Rw02_9_style.js"></script><script src="styles/RT0107RW01_10_style.js"></script><script src="styles/BatasWilayahRw05_11_style.js"></script><script src="styles/BatasWilayahRw04_12_style.js"></script><script src="styles/BatasWilayahRw03_13_style.js"></script><script src="styles/BatasWilayahRw02_14_style.js"></script><script src="styles/BatasWilayahRw01_15_style.js"></script><script src="styles/RumahRT06_16_style.js"></script><script src="styles/Rumahrt6_17_style.js"></script><script src="styles/RumahRW02_18_style.js"></script><script src="styles/LapanganDesaBantarwuni_19_style.js"></script><script src="styles/RumahWarga_20_style.js"></script><script src="styles/TPU_21_style.js"></script><script src="styles/FasilitasLain_22_style.js"></script><script src="styles/UMKM_23_style.js"></script><script src="styles/TmptIbadah_24_style.js"></script><script src="styles/FslitasPendidikan_25_style.js"></script><script src="styles/FasilitasKesehatan_26_style.js"></script><script src="styles/RumahEkarisma_27_style.js"></script><script src="styles/KantorBalaiDesa_28_style.js"></script><script src="styles/RumahKepalaDesa_29_style.js"></script><script src="styles/AliranSungai_30_style.js"></script><script src="styles/JalanKecil_31_style.js"></script><script src="styles/JalanPerum_32_style.js"></script><script src="styles/JlDesa_33_style.js"></script><script src="styles/JlUtamaashp_34_style.js"></script><script src="styles/desa_bantarwuni_poly_35_style.js"></script><script src="styles/Bantarwuni_36_style.js"></script><script src="styles/BatasKecamatanKembaran_37_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
